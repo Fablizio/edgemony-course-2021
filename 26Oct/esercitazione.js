@@ -29,27 +29,27 @@ const radic = (numOne) => Math.sqrt(numOne);
 function operationFunc(operation, parsedNumbers) {
 
     if (operation === "somma" || '+') {
-        return sum(...parsedNumbers);
+        return sum(parsedNumbers);
     }
 
     if (operation === "moltiplicazione" || '*') {
-        return mult(...parsedNumbers);
+        return mult(parsedNumbers);
     }
 
     if (operation === "sottrazione" || '-') {
-        return sottr(...parsedNumbers);
+        return sottr(parsedNumbers);
     }
 
     if (operation === "divisione" || '/') {
-        return divis(...parsedNumbers);
+        return divis(parsedNumbers);
     }
 
     if (operation === "potenza") {
-        return potens(...parsedNumbers);
+        return potens(parsedNumbers);
     }
 
     if (operation === "radice" || '√') {
-        return radic(...parsedNumbers);
+        return radic(parsedNumbers);
     }
 
     else {
