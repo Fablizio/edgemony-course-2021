@@ -1,5 +1,6 @@
 const enlightBtn = document.querySelector(".enlight")
 const compet = document.getElementById("wrapper")
+const picBtn = document.querySelector(".show_pic")
 
 enlightBtn.addEventListener("click", () => {
     document.getElementById("hobby").className = "enlight-mode"
@@ -24,4 +25,8 @@ document.addEventListener("click", (event) => {
     const sections = event.target.getElementsByTagName("p").length;
     console.log(event.target)
     console.log(sections)
+});
+
+picBtn.addEventListener("click", () => {
+    document.getElementById('pic').style.display = 'block';
 });

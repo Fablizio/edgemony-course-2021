@@ -84,6 +84,7 @@ body {
   -webkit-border-radius: 8px;
   border-radius: 8px;
   background-color: rgb(179, 206, 27);
+  padding: 25px;
 }
 
 .wrapper {
@@ -98,6 +99,22 @@ body {
    color: red;
 }
 
+.show_pic {
+  
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background-color: rgb(179, 206, 27);
+  padding: 25px;
+}
+
+#pic {
+
+  border-style: outset;
+  border-color: violet;
+  border-radius: 30px;
+  border-width: 20px;
+}
 
 h2 {
   padding-bottom: 10px;
