@@ -8,7 +8,7 @@ Fondamentalmente la pagina è divisa in due:
 2. una parte inferiore, che ospita il vostri interessi e le competenze (scrivete pure ciò che apprenderete nel bootcamp!)
 
 - La pagina deve presentare in alto a destra un button con la funzionalità 'DarkMode'
-  PICCOLO TIP: date un'occhiata al metodo `toggle`!
+  PICCOLO TIP: date un'occhiata al metodo `toggle`! FATTO
 
 - Una sezione hobby. Create un button accanto che ne illumini la sezione al click! (fate in modo che la classe predente venga rimpizzata da un'altra)
 
