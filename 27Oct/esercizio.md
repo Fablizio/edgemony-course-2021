@@ -10,14 +10,14 @@ Fondamentalmente la pagina è divisa in due:
 - La pagina deve presentare in alto a destra un button con la funzionalità 'DarkMode'
   PICCOLO TIP: date un'occhiata al metodo `toggle`! FATTO
 
-- Una sezione hobby. Create un button accanto che ne illumini la sezione al click! (fate in modo che la classe predente venga rimpizzata da un'altra)
+- Una sezione hobby. Create un button accanto che ne illumini la sezione al click! (fate in modo che la classe predente venga rimpizzata da un'altra) FATTO
 
-- Una sezione a scelta, che si comporta in modo dinamico (qui siate creativi voi sul comportamento da assegnarle)
+- Una sezione a scelta, che si comporta in modo dinamico (qui siate creativi voi sul comportamento da assegnarle) FATTO
 
 - Infine scrivete una funzione che, al click, in qualunque posto della pagina, faccia il `console.log` del numero
   di elementi paragrafo `<p>` utilizzati.
 
-Esercizio AVANZATO!!
+Esercizio AVANZATO!! FATTO!!!
 
 - Un bottone centrale che una volta premuto faccia comparire una immagine (prendetela pure da qui: https://picsum.photos/500/300)
   la immagine deve essere incorniciata (scegliete quindi un bel effetto cornice (css!))
