@@ -10,7 +10,7 @@ Non usare lo stesso della lezione.
    TIP: anche `<input>` è un elemento, e presenta delle chiavi...
    tra queste ne trovate una anche per il testo in esso inserito...
 
-2. Creare un elemento unordered list `<ul>` e un `<button>` all'interno del vostro HTML.
+2. Creare un elemento unordered list `<ul>` e un `<button>` all'interno del vostro HTML. FATTO
    Il click sul button andrà a creare un figlio `<li>` all'interno del padre `<ul>`.
    Non importa la quantità di `li` nè il valore che essi contengono. Ne basta anche uno.
 

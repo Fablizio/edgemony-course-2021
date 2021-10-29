@@ -1,0 +1,53 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Mukta', sans-serif;
+}
+
+body {
+  margin: 50px;
+  border: 50px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* bottone */
+.wrapperButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapperButtons > * {
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: rgb(115, 84, 185);
+  border: 2px solid rgb(0, 7, 17);
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+/* input */
+
+input {
+    margin-top: 25px;
+}
+
+
+/* intestazione */
+.intestazione {
+  display: flex;
+  flex-direction: column;
+}
+
+
