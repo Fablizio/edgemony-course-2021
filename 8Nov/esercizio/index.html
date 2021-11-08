@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+   <title>Fabrizio's Bakery</title>
+   <meta charset="utf-8">
+   <meta name="description" content="Pasticceria a Palermo Specialità Torte e Muffin ">
+   <meta name="keywords"
+      content="Bakery, Muffin, Torta, Torte, Ordina Torte, Ordina Muffin, Sweet, Dolci, Dolce, Ordina dolce, Dolci Palermo">
+   <meta name="author" content="Fabrizio Cottone">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" media="all" href="css/normalize.css">
+   <link rel="stylesheet" media="all" href="css/common.css">
+</head>
+
+<body>
+ 
+   <div class="modal">
+      <img src=img/biscotto.png alt="biscotto" srcset="" />
+      <h3>Accetti i cookies?</h3>
+      <p>La tua Privacy Per noi è importante!</p>
+      <div class="modal__buttons">
+         <button id="btn-accept">Accetta</button>
+         <button id="btn-deny">Nega</button>
+      </div>
+   </div>
+  
+   <header>
+      <img src="img/logo.png" alt="Bakery" width="150" height="150">
+   </header>
+   <!--Hero-->
+
+   <div id="hero">
+      <picture>
+         <source media="(min-width: 991px)" srcset="img/top-d.jpg">
+         <img src="img/top-m.jpg" alt="Bakery" width="700" height="700">
+      </picture>
+
+      <!--<img src="img/top-d.jpg" width="1920" height="750" alt="Ma che sono belle queste torte"> -->
+   </div>
+   
+   <!--Testo-->
+   <div id="testo">
+      <h1>Benvenuti su Bakery</h1>
+      <p>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsum perferendis excepturi incidunt, facere
+         inventore molestiae dolores! Sequi assumenda accusantium enim possimus, exercitationem dolor at, doloremque
+         esse quia, voluptatum quisquam.
+      </p>
+      <br>
+      <a href="#form" class="pulsante">Contattaci</a>
+   </div>
+   <!--Vantaggi-->
+   <div id="vantaggi">
+      <div class="flex-container">
+         <div class="flex-item">
+            <h2>Vantaggio 1</h2>
+            <p>
+               Lorem ipsum dolor, sit ris qui vimpedit animi facere
+            </p>
+         </div>
+         <div class="flex-item">
+            <h2>Vantaggio 2</h2>
+            <p>
+               Lorem ipsum dolor, m magni voluptate
+            </p>
+         </div>
+      </div>
+   </div>
+
+   <!--Form-->
+   <div id="form">
+      <h2>Contattaci</h2>
+      <form id="mioform" name="mioform" action="#">
+         <div class="flex-form">
+
+            <div class="inputDiv">
+               <label for="selezione">Seleziona il reparto *</label>
+               <select name="selezione" id="selezione" required>
+                  <option value="" selected disabled hidden></option>
+                  <option value="clienti">Clienti</option>
+                  <option value="commerciale">Commerciale</option>
+                  <option value="sviluppo">Siluppo</option>
+               </select>
+            </div>
+
+            <div class="inputDiv">
+               <label for="nome"> Nome e cognome *</label>
+               <input type="text" name="nome" id="nome" placeholder="Scrivi qui il tuo nome" required>
+            </div>
+
+            <div class="inputDiv">
+               <label for="email"> Email *</label>
+               <input type="email" name="email" id="email" placeholder="Email *" required>
+            </div>
+
+            <div class="inputDiv larghezza100">
+               <textarea name="testoForm" placeholder="Scrivi qui il tuo commento"></textarea>
+            </div>
+
+            <div class="inputDiv larghezza100">
+               <input type="submit" name="submitForm" value="Invia il Form" class="pulsante">
+            </div>
+
+            <div class="radioDiv">
+               <p>Acconsento al trattamento dei dati personali</p>
+               <br>
+               <label for="edit-privacy-si">SI</label>
+               <input type="radio" id="edit-privacy-si" name="privacy" value="si" checked>
+               <label for="edit-privacy-no">NO</label>
+               <input type="radio" id="edit-privacy-no" name="privacy" value="no">
+            </div>
+         </div>
+      </form>
+
+   </div>
+
+   <footer>
+      <p>
+         Edgemony P.Iva 1251284524 - -Credits by <a href="https://www.linkedin.com/in/fabrizio-cottone-9253b554"
+            target="_blank"> Cottone Fabrizio </a>
+      </p>
+   </footer>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
