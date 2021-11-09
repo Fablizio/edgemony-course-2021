@@ -91,6 +91,8 @@ const nomiIta = planet.map(NewName);
 
 console.log(nomiIta);
 
-const diameter = planet.map((radius) => radius * 2);
+const diam = (planet) => planet.radius * 2;
 
-console.log (diameter);
+const diamTot = solarSystem.map(diam)
+
+console.log(diamTot)
