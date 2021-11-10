@@ -1,76 +1,29 @@
-const sum = (numOne, numTwo) => numOne + numTwo;
-const mult = (numOne, numTwo) => numOne * numTwo;
-const sottr = (numOne, numTwo) => numOne - numTwo;
-const divis = (numOne, numTwo) => numOne / numTwo;
-const potens = (numOne, numTwo) => Math.pow(numOne, numTwo);
-const radic = (numOne) => Math.sqrt(numOne);
 
-function operationFunc(operation, parsedNumbers) {
 
-    if (operation === "somma" || '+') {
-        return sum(parsedNumbers);
+function avanzCalculator(numbers) {
+    try {
+        if (numbers.length === 1) throw "errore: Hai passato un solo valore"
+        if (numbers.length === 0) throw "Nessun parametro passato alla funzione"
+    
+    const sum = () => numbers.reduce((acc, num) => acc + num);
+    const sub = () => numbers.reduce((acc, num) => acc - num);
+    const mul = () => numbers.reduce((acc, num) => acc * num);
+    const div = () => numbers.reduce((acc, num) => acc / num);
+    const potenz = () => numbers.map(num => num * num);
+    const radic = () => numbers.map(num => Math.sqrt(num));
+    return {
+        sum: sum(),
+        sub: sub(),
+        mul: mul(),
+        div: div(),
+        potenz: potenz(),
+        rad: radic()
     }
-
-    if (operation === "moltiplicazione" || '*') {
-        return mult(parsedNumbers);
-    }
-
-    if (operation === "sottrazione" || '-') {
-        return sottr(parsedNumbers);
-    }
-
-    if (operation === "divisione" || '/') {
-        return divis(parsedNumbers);
-    }
-
-    if (operation === "potenza") {
-        return potens(parsedNumbers);
-    }
-
-    if (operation === "radice" || '√') {
-        return radic(parsedNumbers);
-    } else {
-        allert('Attenzione Bisogna inserire almeno un numero');
-    }
-}
-
-
-function calculator(numbers) {
-    let totOperation = 0;
-    totOperation = operationFunc(...numbers);
-    return 'Il risultato è: ', totOperation;
-}
-
-
-let operation = prompt("Inserisci operazione: ");
-let numbersChoiche = prompt("Inserisci numeri: ");
-try {
-    if (operation != "+" || "somma") throw "Devi inserire una operazione";
-    if (operation != "-" || "sottrazione") throw "Devi inserire una operazione";
-    if (operation != "*" || "moltiplicazione") throw "Devi inserire una operazione";
-    if (operation != "/" || "divisione") throw "Devi inserire una operazione";
-    if (operation != "potenza") throw "Devi inserire una operazione ";
-    if (operation != "radice" || "√") throw "Devi inserire una operazione ";
-    if (operation === "") throw "Devi inserire una operazione";
-    if (numbersChoiche === "") throw "Devi inserire almeno un numero";
-    if (numbersChoiche === "") throw "Devi inserire almeno un numero";
-    if (numbersChoiche != "\,") throw "Devi inserire almeno un numero";
 } catch (err) {
     console.log(err);
 } finally {
-    console.log("Bravo.");
+    console.log("Hai fatto la tua scelta.");
 }
-const numbers = [...numbersChoiche.split(",")];
-console.log(numbers)
-const parsedNumbers = [];
-
-for (x of numbers) {
-    parsedNumbers.push(parseInt(x));
 }
 
 
-
-
-calculator(operation, parsedNumbers);
-
-console.log(calculator(operation, parsedNumbers));
