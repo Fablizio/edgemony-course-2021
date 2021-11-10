@@ -45,25 +45,16 @@ function calculator(numbers) {
 let operation = prompt("Inserisci operazione: ");
 let numbersChoiche = prompt("Inserisci numeri: ");
 try {
-    switch (errori) {
-        case soma:
-            operation !== "+"; throw "Devi inserire una operazione";
-    }
-    // if (operation !== "+") throw "Devi inserire una operazione";
-    // if (operation !== "somma") throw "Devi inserire una operazione";
-    // if (operation !== "-") throw "Devi inserire una operazione";
-    // if (operation !== "sottrazione") throw "Devi inserire una operazione ";
-    // if (operation !== "*") throw "Devi inserire una operazione";
-    // if (operation !== "moltiplicazione") throw "Devi inserire una operazione";
-    // if (operation !== "/") throw "Devi inserire una operazione";
-    // if (operation !== "divisione") throw "Devi inserire una operazione ";
-    // if (operation !== "potenza") throw "Devi inserire una operazione ";
-    // if (operation !== "radice") throw "Devi inserire una operazione ";
-    // if (operation !== "√") throw "Devi inserire una operazione ";
-    // if (operation === "") throw "Devi inserire una operazione";
-    // if (numbersChoiche === "") throw "Devi inserire almeno un numero";
-    // if (numbersChoiche === "") throw "Devi inserire almeno un numero";
-    // if (numbersChoiche !== "\,") throw "Devi inserire almeno un numero";
+    if (operation != "+" || "somma") throw "Devi inserire una operazione";
+    if (operation != "-" || "sottrazione") throw "Devi inserire una operazione";
+    if (operation != "*" || "moltiplicazione") throw "Devi inserire una operazione";
+    if (operation != "/" || "divisione") throw "Devi inserire una operazione";
+    if (operation != "potenza") throw "Devi inserire una operazione ";
+    if (operation != "radice" || "√") throw "Devi inserire una operazione ";
+    if (operation === "") throw "Devi inserire una operazione";
+    if (numbersChoiche === "") throw "Devi inserire almeno un numero";
+    if (numbersChoiche === "") throw "Devi inserire almeno un numero";
+    if (numbersChoiche != "\,") throw "Devi inserire almeno un numero";
 } catch (err) {
     console.log(err);
 } finally {
