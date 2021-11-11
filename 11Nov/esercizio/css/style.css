@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@400;700&family=Press+Start+2P&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --main_color: #81ceda;
+}
+
+body {
+    font-family: "Mohave", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     flex-wrap: wrap;
+     min-height: 100vh;
+     background: #fdffe1;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 40px 0;
+
+}
+
+.container .card 
+{
+    position:relative;
+    min-width: 320px;
+    height: 400px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0,0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+     5px 5px 15px rgba(0,0, 0, 0.3),
+     -5px -5px 15px rgba(255, 255, 255,  0.1);
+     border-radius: 15px;
+     margin: 30px;
+     
+
+}
+
+.container .card .box
+{
+    position: absolute;
+    margin-bottom: 25px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border: 2px solid #1e1f23;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.container .card .box:hover {
+    z-index: 0;
+    transform: translateY(-50px);
+    box-shadow: 0 40px 70px rgba(0, 0, 0,0.2);
+    opacity: -1;
+    transition: 0.35s;
+}
+
+h4 {
+    margin: 10px 0 0;
+    padding: 15px;
+    color: var(--main_color);
+}
+
+img {
+    width: 90px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.cart {
+    text-align: right;
+    width: 80px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper__titles {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper__titles h2 {
+    font-size: 2rem;
+}
+
+.wrapper__titles h4 {
+    font-size: 0.9rem;
+}
+
+.wrapper__products {
+    margin: 0 40px;
+    height: 38vh;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7.5px;
+    padding: 10px;
+
+    min-width: 150px;
+
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 12px;
+
+    opacity: 0.78;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+.product:hover {
+    transform: scale(0.9);
+    border: 2px solid var(--main_color);
+}
+
+.product:active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.product p {
+    align-self: flex-start;
+}
