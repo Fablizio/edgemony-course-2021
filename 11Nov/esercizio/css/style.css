@@ -19,6 +19,7 @@ body {
      flex-wrap: wrap;
      min-height: 100vh;
      background: #fdffe1;
+     background-image: url('background.png');
 }
 
 .container 
@@ -50,7 +51,7 @@ body {
 .container .card .box
 {
     position: absolute;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     top: 20px;
     left: 20px;
     right: 20px;
@@ -119,14 +120,11 @@ strong {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 7.5px;
+    margin: 25px;
     padding: 10px;
-
     min-width: 150px;
-
     border: 2px solid rgb(50, 50, 50);
     border-radius: 12px;
-
     opacity: 0.78;
     cursor: pointer;
     transition: all 0.35s;
@@ -144,4 +142,8 @@ strong {
 
 .product p {
     align-self: flex-start;
+}
+
+h2 {
+    color: rgb(230, 37, 11);
 }
